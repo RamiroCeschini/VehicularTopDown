@@ -6,7 +6,8 @@ public class GunShot : MonoBehaviour
 {
     public Transform spawnPoint;
     public GameObject bulletToSpawn;
-    //public ParticleSystem gunSmoke;
+    public GameObject bulletParticle;
+
     public float coolDownTime = 1f;
     private bool coolDown = false;
 
@@ -29,7 +30,7 @@ public class GunShot : MonoBehaviour
     {
         coolDown = true;
         Instantiate(bulletToSpawn, spawnPoint.position, spawnPoint.rotation);
-     //   Instantiate(gunSmoke, spawnPoint.position, spawnPoint.rotation);
+        Instantiate(bulletParticle, spawnPoint.position, spawnPoint.rotation);
 
     }
 
