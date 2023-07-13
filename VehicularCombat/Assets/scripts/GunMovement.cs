@@ -4,20 +4,37 @@ using UnityEngine;
 
 public class GunMovement : MonoBehaviour
 {
-    public Vector3 lookPos;
-    void Update()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+   
+    public float rotationSpeed = 180f;
 
+    private Transform gunTransform;
+    private Camera mainCamera;
+
+    private void Awake()
+    {
+        gunTransform = GetComponent<Transform>();
+        mainCamera = Camera.main;
+    }
+
+    private void Update()
+    {
+
+
+        // Rotation
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit))
         {
-            lookPos = hit.point;
-        }
+            Vector3 targetPosition = new Vector3(hit.point.x, gunTransform.position.y, hit.point.z);
+            Vector3 direction = targetPosition - gunTransform.position;
 
-        Vector3 lookDir = lookPos - transform.position;
-        lookDir.y = 0;
-        transform.LookAt(transform.position + lookDir, Vector3.up);
+            if (direction != Vector3.zero)
+            {
+                Quaternion toRotation = Quaternion.LookRotation(direction);
+                gunTransform.rotation = Quaternion.RotateTowards(gunTransform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            }
+        }
     }
+
 }
