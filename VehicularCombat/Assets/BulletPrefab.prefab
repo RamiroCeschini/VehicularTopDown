@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  bulletSpeed: 2000
+  bulletSpeed: 1200
   bulletParticle: {fileID: 6689551180722712661, guid: 178da4fe8f56ec846b24fcbb0b4a5d86, type: 3}
 --- !u!54 &7630522099738942152
 Rigidbody:
