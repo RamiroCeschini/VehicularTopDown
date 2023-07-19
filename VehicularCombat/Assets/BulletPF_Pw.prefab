@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7630522099738942159}
   - component: {fileID: 7630522099738942152}
   m_Layer: 0
-  m_Name: BulletPrefab
+  m_Name: BulletPF_Pw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd3a10d91bbccbb47aaffbb1305de8a6, type: 2}
+  - {fileID: 2100000, guid: 3c8ec6c19a8c38e4eaae2b443b792ef0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -114,6 +114,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   bulletSpeed: 1200
   bulletParticle: {fileID: 6689551180722712661, guid: 178da4fe8f56ec846b24fcbb0b4a5d86, type: 3}
+  bulletDamage: 7
 --- !u!54 &7630522099738942152
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -57,8 +57,6 @@ public class TrainController2 : MonoBehaviour
       
         if (Physics.Raycast(gameObject.transform.position, - gameObject.transform.up, out hit, rayDistance, LayerMask.GetMask("Floor" )))
         {
-          
-        Debug.Log("Todo ok");
         restartCounter = 0;
            
         }
@@ -71,7 +69,7 @@ public class TrainController2 : MonoBehaviour
                 SceneManager.LoadScene("GameScene");
             }
         }
-        Debug.Log("Velocity is: " +  currentVelocity);
+       // Debug.Log("Velocity is: " +  currentVelocity);
     }
 
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDamagable
+public interface IShooter
 {
-    void TakeDamage(float damage);
+    void ChangeBullet(GameObject bullet);
 }
