@@ -9,6 +9,7 @@ public class GunShot : MonoBehaviour, IShooter
     public GameObject bulletToSpawn;
     public GameObject bulletParticle;
     public AudioClip shotSound;
+    private UIController controller;
 
 
     public bool isEnemy = false;
@@ -20,6 +21,7 @@ public class GunShot : MonoBehaviour, IShooter
 
     private void Start()
     {
+        controller = GameObject.FindWithTag("UIController").GetComponent<UIController>();
         spawnPoint = transform.Find("SpawnPoint");
         bulletToSpawn = bulletBasic;   
     }
@@ -52,12 +54,14 @@ public class GunShot : MonoBehaviour, IShooter
     public void ChangeBullet(GameObject newBulletPrefab)
     {
         bulletToSpawn = newBulletPrefab;
-        if(bulletToSpawn != bulletBasic) { Invoke("ResetBullet", 5f); }
+        controller.ChangeOpacity(true, controller.powerUpRender);
+        if (bulletToSpawn != bulletBasic) { Invoke("ResetBullet", 7f); }
     }
     
     private void ResetBullet()
     {
         bulletToSpawn = bulletBasic;
+        controller.ChangeOpacity(false, controller.powerUpRender);
     }
 
     private void ResetCoolDown()
