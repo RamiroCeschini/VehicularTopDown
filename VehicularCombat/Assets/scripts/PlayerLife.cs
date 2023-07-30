@@ -59,9 +59,13 @@ public class PlayerLife : MonoBehaviour, IDamagable
     public void TakeDamage(float damage)
     {
 
-        if (canBeDamaged == true && !isEnemy)
+        if (!isEnemy)
         {
-            if (Playerlife > 0)
+           if(damage < 0)
+            {
+                Playerlife -= damage;
+            }
+            if (canBeDamaged == true && Playerlife > 0)
             {
                 Playerlife -= damage;
                 controller.UpdateLife(controller.playerLifeBar,Playerlife, maxPlayerLife);
