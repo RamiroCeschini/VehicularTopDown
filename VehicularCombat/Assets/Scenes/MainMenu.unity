@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.17677362, g: 0.22127555, b: 0.30357048, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: c2f5402fdca53a448bba1e4b29fad04e, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 984f44cf20d5fc247afaa7b1c5935bb9, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -274,7 +274,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &452080973
 MeshCollider:
@@ -620,9 +620,49 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 449
       objectReference: {fileID: 0}
+    - target: {fileID: -6672613553983260606, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6593898204229437817, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6408753981318763449, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6124289406595120915, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 750818525199488891, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e2f211270c83dba408a6166209664141, type: 3}
       propertyPath: m_Name
       value: GG_FP_RIG
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070331365336846335, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2486718047307165977, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756720892784420627, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185526944496641442, guid: e2f211270c83dba408a6166209664141, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2f211270c83dba408a6166209664141, type: 3}
@@ -819,7 +859,7 @@ Light:
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -852,7 +892,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -870,14 +910,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055457195}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalRotation: {x: 0.4701732, y: -0.5106683, z: 0.25205618, w: 0.67425716}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 63.058, y: -85.403, z: -18.039}
 --- !u!1 &1128433505
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +1015,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &1297930762
 MeshCollider:
@@ -1335,9 +1375,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2107912628613829504, guid: 39244503a9c6004408787126fa4b5175, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 39244503a9c6004408787126fa4b5175, type: 3}
       propertyPath: m_Name
       value: 3dp_toytrain_hi
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 39244503a9c6004408787126fa4b5175, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39244503a9c6004408787126fa4b5175, type: 3}

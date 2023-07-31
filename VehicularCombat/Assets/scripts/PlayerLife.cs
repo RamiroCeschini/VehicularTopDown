@@ -12,6 +12,7 @@ public class PlayerLife : MonoBehaviour, IDamagable
     public bool canBeDamaged;
     private UIController controller;
     private EnemyCounter enemyCounter;
+    public GameObject destroyParticle;
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class PlayerLife : MonoBehaviour, IDamagable
                 if (isEnemy) 
                 {
                     enemyCounter.KillEnemy();
+                    Instantiate(destroyParticle);
                     Destroy(gameObject); 
                 }
 

@@ -31,7 +31,13 @@ public class EnemyCounter : MonoBehaviour
         if (enemyCount == totalEnemies)
         {
             Cursor.lockState = CursorLockMode.None;
-            SceneManager.LoadScene("Win");
+            Invoke("WinScene", 2f);
         }
+    }
+
+    private void WinScene()
+    {
+
+        SceneManager.LoadScene("Win");
     }
 }

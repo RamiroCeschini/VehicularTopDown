@@ -10,7 +10,7 @@ public class CameraControll : MonoBehaviour
     {
         if (Input.GetMouseButton(1))
         {
-            cameraControl.m_XAxis.m_MaxSpeed = 500f;
+            cameraControl.m_XAxis.m_MaxSpeed = 300f;
         }
 
         else
